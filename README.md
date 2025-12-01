@@ -8,16 +8,17 @@ Das Ganze wird später als physische Installation in einem Glaskasten an unserer
 
 🧩 Inhalt
 
-[Über das Projekt](#über-das-projekt)
+[Über das Projekt](über-das-projekt)
 
-[Features](#features)
+[Features](features)
 
-[Technischer Überblick](#technischer-überblick)
+[Technischer Überblick](technischer-überblick)
 
-[Lizenz](#lizenz)
+[Lizenz](lizenz)
 
 
-##🎮 Über das Projekt
+<a id="über-das-projekt"></a>
+🎮 Über das Projekt
 
 Der Glaskasten ist ein Arcade-Automat auf Python-Basis.
 In ihm laufen kleine, selbst entwickelte Spiele, die über einen grafischen Launcher ausgewählt werden.
@@ -34,7 +35,8 @@ Saubere Trennung zwischen Launcher, Spielen und Hardware
 Eine reale, installierte Arcade-Machine für Events & Projekte an der Uni
 
 
-##✨ Features
+<a id="features"></a>
+✨ Features
 
 🕹 Eigener Arcade-Launcher in Python & pygame
 
@@ -48,7 +50,8 @@ Eine reale, installierte Arcade-Machine für Events & Projekte an der Uni
 
 🔧 Einfache Erweiterbarkeit über Game-Templates
 
-##⚙️ Technischer Überblick
+<a id="technischer-überblick"></a>
+⚙️ Technischer Überblick
 
 🎛 Launcher
 
@@ -81,6 +84,7 @@ Optionaler Fallback auf Tastatur-Steuerung
 
 
 
-##📄 Lizenz
+<a id="lizenz"></a>
+📄 Lizenz
 
 MIT
