@@ -17,6 +17,7 @@ GAME_PATH = SCRIPT_PATH / "Games"
 running = True
 
 pygame.init()
+pygame.mouse.set_visible(False)
 clock = pygame.time.Clock()
 
 
@@ -33,7 +34,12 @@ def game_loader (COVER_PATH, GAME_PATH):
     game_format = {'.py'}
     
     covers = {f.stem: f for f in COVER_PATH.iterdir() if f.is_file() and f.suffix.lower() in image_formats} #Checkt nach Covern
-    games  = {f.stem: f for f in GAME_PATH.iterdir()  if f.is_file() and f.suffix.lower() in game_format}
+    game_folder = {f.stem: f for f in GAME_PATH.iterdir() if f.is_dir()}
+    games  = {}
+    for folder in game_folder.values():
+        for f in folder.iterdir():
+            if f.is_file() and f.suffix.lower() in game_format:
+                games[f.stem] = f
     
     print("Found covers:", list(covers.keys()))
     print("Found games:", list(games.keys()))
