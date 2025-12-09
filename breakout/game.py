@@ -10,7 +10,7 @@ class Game:
     ships = []
     bombs = []
     font = None
-    lifes = 0
+    lifes = 2 
     level = 0
     current_score = 0
 
@@ -23,6 +23,8 @@ class Game:
         Game.exploding = pygame.mixer.Sound("breakout/asp-ulm-data/exploding.wav")
         Game.bounce = pygame.mixer.Sound("breakout/asp-ulm-data/bounce.mp3")
         Game.launch = pygame.mixer.Sound("breakout/asp-ulm-data/launch.wav")
+        Game.game_over = pygame.image.load("breakout/asp-ulm-data/Gameover.png")
+        Game.is_game_over = False
 
     def draw():
         for item in Game.balls + Game.rockets + Game.ships + Game.bombs:
